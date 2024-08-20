@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background-color: #d6cde7;
+  font-family: "Gilroy ExtraBold", "Inter";
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: local("Gilroy ExtraBold"),
+    url(../fonts/font1.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url(../fonts/font2.ttf) format("truetype");
+}
