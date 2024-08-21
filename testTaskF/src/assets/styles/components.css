@@ -1,0 +1,268 @@
+/* Return Button */
+
+.closeButton {
+  position: absolute;
+  width: 91px;
+  height: 113px;
+  z-index: 2;
+}
+
+.closeButton-image {
+  width: 91px;
+  height: 113px;
+  margin: 0;
+}
+
+.closeButton-icon {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  margin: auto;
+  transform: scale(0.5);
+  cursor: pointer;
+}
+
+/* Take Course Button */
+
+.course-button {
+  display: grid;
+  align-content: center;
+  background: #ffffff;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+.course-button:hover {
+  transform: translateY(-2px);
+  transition: 0.3s;
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15);
+  background: var(
+    --Spline-Color-gradient,
+    linear-gradient(180deg, #734ee0 0%, #573ad9 92.5%)
+  );
+}
+
+.course-button-title {
+  font-style: normal;
+  font-size: 15px;
+  margin: 0;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+
+.course-button-title:hover {
+  color: white;
+}
+
+/* Downlod Model Button */
+
+.download-button {
+  width: 210px;
+  display: flex;
+  gap: 12px;
+  background: linear-gradient(180deg, #baaed1 0%, rgba(186, 174, 209, 0) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 10px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+}
+
+.download-button:hover .download-button-circle {
+  background: linear-gradient(180deg, #734ee0 0%, #573ad9 92.5%);
+}
+
+.download-button-circle {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(180deg, #a9a9a9 0%, rgba(240, 240, 240, 0) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.download-button-title {
+  font-style: normal;
+  font-weight: bold;
+  color: #000000;
+  font-size: 20px;
+  margin: 0;
+
+  @media (max-width: 560px) {
+    font-size: 22px;
+  }
+}
+
+/* Header */
+
+.header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  top: 56px;
+  right: 50px;
+  z-index: 2;
+}
+
+.header a {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+  .header {
+    display: none;
+  }
+}
+
+.header-caption {
+  text-transform: uppercase;
+  font-style: normal;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header-caption:hover {
+  transform: translateY(-2px);
+}
+
+/* Logo */
+
+.logo-wrapper {
+  width: fit-content;
+  background: linear-gradient(
+    180deg,
+    rgba(153, 160, 169, 0.5) 0%,
+    #ffffff 100%
+  );
+  box-shadow: 4px 4px 20px rgba(142, 155, 174, 0.1);
+  padding: 5px 5px 5px 0px;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.logo-component-container {
+  background: linear-gradient(264.48deg, #734ee0 7.06%, #573ad9 31.71%);
+  box-shadow: 0px 8px 10px rgba(95, 64, 220, 0.2),
+    inset 0px 2px 4px rgba(255, 255, 255, 0.2);
+  border-radius: 0px 40px 40px 0px;
+  border: 0.5px solid;
+  border-image-source: linear-gradient(
+    143.97deg,
+    rgba(0, 0, 0, 0.3) 20.26%,
+    rgba(0, 0, 0, 0.4) 85.18%
+  );
+}
+
+.logo-title {
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 12px 20px 12px 55px;
+  margin: 0;
+
+  @media (max-width: 560px) {
+    font-size: 28px;
+  }
+}
+
+.logo-title span {
+  color: #bebbff;
+}
+
+/* Play Game Button */
+
+.play-button-wrapper {
+  width: 210px;
+  background: linear-gradient(
+    180deg,
+    rgba(153, 160, 169, 0.5) 0%,
+    #ffffff 100%
+  );
+  box-shadow: 4px 4px 20px rgba(142, 155, 174, 0.1);
+  border-radius: 30px;
+  padding: 4px 5px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+.play-button-wrapper:hover {
+  transform: translateY(-2px);
+}
+
+.play-button-wrapper:hover .play-button-mini-circle {
+  background: linear-gradient(180deg, #038bed 0%, #74c8f8 100%);
+}
+
+.play-button-container {
+  display: flex;
+  gap: 12px;
+  background: linear-gradient(180deg, #734ee0 0%, #573ad9 92.5%);
+  box-shadow: 0px 8px 10px rgba(95, 64, 220, 0.2),
+    inset 0px 2px 4px rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 8px;
+  border: 0.5px solid;
+  border-image-source: linear-gradient(
+    143.97deg,
+    rgba(0, 0, 0, 0.3) 20.26%,
+    rgba(0, 0, 0, 0.4) 85.18%
+  );
+}
+
+.play-button-circle {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(180deg, #3116c7 0%, #a07bff 100%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+}
+
+.play-button-mini-circle {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(180deg, #9a97ff 0%, #eee9fe 100%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 4px auto;
+}
+
+.play-button-title {
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0;
+
+  @media (max-width: 560px) {
+    font-size: 22px;
+  }
+}
+
+/* Spline Scene */
+
+.spline-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 720px;
+}
+
+@media (max-width: 560px) {
+  .spline-wrapper {
+    min-height: 520px;
+  }
+}
